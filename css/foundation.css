@@ -2154,7 +2154,7 @@ button, .button {
     clear: both; }
   .button-bar .button-group {
     float: left;
-    margin-right: 0.625rem; }
+    margin-right: 0.5rem; }
     .button-bar .button-group div {
       overflow: hidden; }
 

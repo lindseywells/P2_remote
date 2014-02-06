@@ -18,78 +18,135 @@
  
       </div>
     </div>
+
+<hr>
+
+    <!--Carousel-->
+    <ul class="example-orbit-content" data-orbit>
+      <li data-orbit-slide="headline-1">
+        <div>
+          <h2>Headline 1</h2>
+          <h3>Subheadline</h3>
+        </div>
+      </li>
+      <li data-orbit-slide="headline-2">
+        <div>
+          <h2>Headline 2</h2>
+          <h3>Subheadline</h3>
+        </div>
+      </li>
+      <li data-orbit-slide="headline-3">
+        <div>
+          <h2>Headline 3</h2>
+          <h3>Subheadline</h3>
+        </div>
+      </li>
+    </ul>
+
+<hr>
     
     <!-- VOLUME & CHAN -->
-    <div class="row">
       
       <!-- VOL -->
-      <div class="small-6 columns">
+      <div class="columns">
           
           <div class="button-bar">
             <ul class="button-group round">
-              <li><a href="#" class="tiny button secondary">VOL +</a></li>
-              <li><a href="#" class="tiny button secondary">VOL -</a></li>
+              <li><a href="#" class="small button secondary">VOL +</a></li>
+              <li><a href="#" class="small button secondary">VOL -</a></li>
             </ul>
           </div>
  
       </div>
        
       <!-- CHAN -->
-      <div class="small-6 columns">
- 
+      <div class="columns">
+          
           <div class="button-bar">
             <ul class="button-group round">
-              <li><a href="#" class="tiny button secondary">CHAN +</a></li>
-              <li><a href="#" class="tiny button secondary">CHAN -</a></li>
+              <li><a href="#" class="small button secondary">CHL +</a></li>
+              <li><a href="#" class="small button secondary">CHL -</a></li>
             </ul>
           </div>
-          
-      </div>
  
-    </div><!-- end Chan & Vol -->
+      </div>
+
+<hr>
  
     <!-- RECORD, PLAY, PAUSE -->
-    <div class="row">
-      <div class="small-12 columns">
-        
-        <dl class="accordion" data-accordion>
-            <dd>
-              <a href="#panel1">Record</a>
-              <div id="panel1" class="content active">
-                  
-                  <h3>Record Buttons</h3>
- 
-              </div>
-            </dd>
-            
-            <dd>
-              <a href="#panel2">Play</a>
-              <div id="panel2" class="content">
-                  
-                  <h3>Play</h3>
- 
-              </div>
-            </dd>
-
-            <dd>
-              <a href="#panel3">Pause</a>
-              <div id="panel3" class="content">
-                  
-                  <h3>Pause</h3>
- 
-              </div>
-            </dd>
-            
-          </dl>
- 
+      <dl class="accordion" data-accordion>
+        <dd>
+          <a href="#panel1">Recorded Shows</a>
+          <div id="panel1" class="content active">
+            <ul>
+              <li>TV Show 1</li>
+              <li>TV Show 2</li>
+              <li>TV Show 3</li>
+              <li>TV Show 4</li>
+              <li>TV Show 5</li>
+            </ul>
+          </div>
+        </dd>
+        <dd>
+          <a href="#panel2">Playback</a>
+          <div id="panel2" class="content">
+            <button class="playback"><h3>&#9632;</h3></button>
+            <button class="playback"><h3>&#9656;</h3></button>
+            <button class="playback"><h3>&#8214;</h3></button>
+          </div>
+        </dd>
+        <dd>
+          <a href="#panel3">Number Pad</a>
+          <div id="panel3" class="content">
+            <!-- Number Pad -->
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>6</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>8</td>
+                          <td>9</td>
+                        </tr>
+                        <tr>
+                          <td>*</td>
+                          <td>0</td>
+                          <td>#</td>          
+                        </tr>
+                      </tbody>
+                    </table>
       </div>
-    </div>
+    </dd>
+  </dl>
+
+<hr>
+    
+    <p>Company Inc. 2014 &#169;</p>
     
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        orbit: {
+          animation: 'fade',
+          timer_speed: 3000,
+          pause_on_hover: true,
+          animation_speed: 500,
+          navigation_arrows: true,
+          bullets: true,
+          slide_number: false,
+          }
+        });
+
     </script>
   </body>
 </html>

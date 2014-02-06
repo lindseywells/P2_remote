@@ -1,0 +1,17 @@
+body {
+	background: #333;
+}
+
+p {
+	text-align: center;
+}
+
+.playback {
+	height: 50px;
+	padding: 0px 20px;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+}
